@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advanced CSS Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" role="application" aria-label="Advanced calculator">
+    <header>
+      <div class="title">
+        <div class="logo">AC</div>
+        <div>
+          <h1>Advanced CSS Calculator</h1>
+          <p class="sub">Precision + keyboard support + smooth UI</p>
+        </div>
+      </div>
+      <div class="controls" aria-hidden="true"></div>
+    </header>
+
+    <div class="screen" id="screen">
+      <div class="previous" id="previous">&nbsp;</div>
+      <div class="current" id="current">0</div>
+    </div>
+
+    <div class="keys" role="group" aria-label="Calculator keys">
+      <button class="key secondary" data-action="clear" aria-label="Clear">C</button>
+      <button class="key secondary" data-action="back" aria-label="Backspace">⌫</button>
+      <button class="key secondary" data-action="percent" aria-label="Percent">%</button>
+      <button class="key operator" data-action="divide" aria-label="Divide">÷</button>
+
+      <button class="key" data-number="7">7</button>
+      <button class="key" data-number="8">8</button>
+      <button class="key" data-number="9">9</button>
+      <button class="key operator" data-action="multiply" aria-label="Multiply">×</button>
+
+      <button class="key" data-number="4">4</button>
+      <button class="key" data-number="5">5</button>
+      <button class="key" data-number="6">6</button>
+      <button class="key operator" data-action="subtract" aria-label="Subtract">−</button>
+
+      <button class="key" data-number="1">1</button>
+      <button class="key" data-number="2">2</button>
+      <button class="key" data-number="3">3</button>
+      <button class="key operator" data-action="add" aria-label="Add">+</button>
+
+      <button class="key" data-action="negate">±</button>
+      <button class="key" data-number="0">0</button>
+      <button class="key" data-action="decimal">.</button>
+      <button class="key equal" data-action="equals" aria-label="Equals">=</button>
+
+      <button class="key wide secondary" data-action="sqrt">√</button>
+      <button class="key wide secondary" data-action="pow">x²</button>
+    </div>
+
+    <footer>
+      <div>Tip: Use keyboard (digits, + - * / Enter Backspace)</div>
+      <div>Made with ❤️</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
